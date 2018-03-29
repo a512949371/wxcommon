@@ -1,0 +1,129 @@
+/* pages/my/myadd/myadd.wxss */
+.pr20{
+  padding-right: 20rpx;
+}
+.mr20{
+  margin-right: 20rpx;
+}
+.myadd-box{
+  width: 100%
+}
+.myadd-box .my-add{
+  padding: 16rpx 20rpx;
+  background-color: #e9e9e9;
+  border-top: 1rpx solid #e5e5e5;
+  box-shadow: 2rpx 2rpx 5rpx #999;
+  margin-top: 40rpx;
+}
+.myadd-box .my-add .addbox{
+  font-size: 32rpx;
+  color: #666;
+  padding-top: 10rpx;
+}
+.myadd-box .active{
+  border-top: 1rpx solid #f00;
+  box-shadow: 2rpx 2rpx 5rpx #f00;
+}
+.newadd{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #ff6c00;
+  font-size: 32rpx;
+  border-top: 1rpx solid #999;
+  color: #FFF;
+  z-index: 99;
+  display: flex
+}
+.newadd .btn{
+  flex: 1;
+  padding: 30rpx 0;
+  font-size: 32rpx;
+  text-align: center;
+  color: #FFF
+}
+.newadd .one{
+  background-color: #ff6c00
+}
+.newadd .two{
+  background-color: #f00
+}
+.myadd-box .change-box{
+  text-align: right;
+  font-size: 32rpx;
+  color: #e5e5e5;
+  padding: 20rpx 0 0 0;
+  border-top: 1rpx solid #ccc;
+  margin-top: 16rpx;
+}
+.myadd-box .change-box text{
+  padding: 5rpx 18rpx;
+  border-radius: 10rpx;
+  background-color: #a2a2a2;
+  color: #FFF;
+}
+.newadd-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99
+}
+.newadd-box .shaw{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0,0,0.5)
+}
+.newadd-box .add-box{
+  height: 600rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFF
+}
+.newadd-box .add-box .tit{
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  color: #333;
+  text-align: center
+}
+.newadd-box .add-box .add{
+  padding: 0 40rpx;
+  display: flex;
+  font-size: 32rpx; 
+  margin:30rpx 0;
+}
+
+.newadd-box .add-box .add .dec{
+  width: 150rpx;
+}
+.newadd-box .add-box .add .input-box{
+  padding:5rpx 30rpx;
+  border: 1rpx solid #e5e5e5;
+  margin-left: 20rpx;
+  border-radius: 8rpx
+}
+.newadd-box .add-box .btn-box{
+  display: flex
+}
+.newadd-box .add-box .btn-box .btn{
+  flex: 1;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  color: #FFF
+}
+.newadd-box .add-box .btn-box .one{
+  background-color: #ff6c00
+}
+.newadd-box .add-box .btn-box .two{
+  background-color: #f00
+}

@@ -1,0 +1,109 @@
+/* pages/shopcar/shopcar.wxss */
+.shopcar-box{
+  width: 100%;
+  background-color: #eee
+}
+.shopcar-box .bg{
+  background-color: #FFF;
+  margin-bottom: 50rpx;
+}
+checkbox{
+  zoom: 60%
+}
+checkbox:checked{
+  color: #f00
+}
+image{
+  width: 100%;
+  display: block
+}
+.shopcar-box .shopname-box{
+  padding: 10rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: flex;
+
+}
+.shopname-box .shopname{
+  font-size: 32rpx;
+  flex: 1
+}
+.shopname-box .icon{
+  width: 40rpx;
+}
+.shopcar-box .shoplist-box{
+  width: 100%;
+  display: flex;
+  padding: 20rpx 0 20rpx 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.shopcar-box .shoplist-box .leftimg{
+  width: 180rpx;
+  padding: 20rpx;
+  box-sizing: border-box
+}
+.shopcar-box .shoplist-box .center-content{
+  flex: 1
+}
+.shopcar-box .shoplist-box .center-content .name{
+  font-size: 32rpx;
+  color: #333;
+}
+.shopcar-box .shoplist-box .center-content .dec{
+  font-size: 30rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+.shopcar-box .shoplist-box .center-content .num-box{
+  display: flex
+}
+.shopcar-box .shoplist-box .center-content .num-box .reduce,.shopcar-box .shoplist-box .center-content .num-box .add{
+  width: 60rpx;
+  border: 1rpx solid #e5e5e5;
+  text-align: center
+}
+.shopcar-box .shoplist-box .center-content .num-box input{
+  text-align: center;
+  width: 100rpx;
+  border: 1rpx solid #e5e5e5;
+  color: #999
+}
+.shopcar-box .shoplist-box .right-icon .price{
+  font-size: 32rpx;
+  padding-top: 30rpx;
+  color: #666
+}
+.shopcar-box .shoplist-box .right-icon .price .red{
+  color: #f00;
+  padding-left: 10rpx
+}
+.shopcar-box .shoplist-box .right-icon{
+  width: 120rpx;
+}
+.carbuy-box{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  border-top: 1rpx solid #ccc;
+  display: flex
+}
+.carbuy-box .info{
+  padding:30rpx;
+  flex: 1;
+  font-size: 32rpx;
+  color: #666
+}
+.carbuy-box .info .red{
+  color: #f00;
+  padding: 0 10rpx;
+}
+.carbuy-box .btn{
+  padding:20rpx 0;
+  text-align: center;
+  width: 300rpx;
+  font-size: 32rpx;
+  color: #FFF;
+  background-color: #ff8900
+}

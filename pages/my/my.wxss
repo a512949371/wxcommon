@@ -1,0 +1,106 @@
+/* pages/my/my.wxss */
+.text{
+  font-size: 12px;
+  padding-left:30px;
+  text-align: center;
+}
+.c{
+  zoom: 1
+}
+.c::after{
+  content: "";
+  display: block;
+  clear: both;
+  z-index: 1
+}
+.fl{
+  float: left
+}
+.fr{
+  float: right
+}
+image{
+  width: 100%;
+  display: block
+}
+.btn{
+  margin: auto;
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  background: no-repeat
+}
+.my-box{
+  width: 100%;
+}
+.my-box .my-top{
+  width: 100%;
+  padding: 40rpx 60rpx;
+  box-sizing: border-box;
+  background-color: rgb(255, 137, 0);
+  display: flex
+}
+.my-box .my-top .my-icon{
+  width: 160rpx;
+  border-radius: 50%;
+  overflow: hidden
+}
+.my-box .my-top .my-icon image{
+  width: 100%;
+  display: block
+}
+.my-box .my-top .my-name{
+  color: #FFF;
+  padding-left: 40rpx;
+  padding-top: 40rpx
+}
+.my-box .order-box{
+  padding: 20rpx 40rpx;
+  width: 100%;
+  box-sizing: border-box;
+  color: #666;
+  border-bottom: 1px solid #e5e5e5
+}
+.my-box .order-box .btnsty{
+  color: #999;
+  font-size: 32rpx;
+}
+.my-box .order-status{
+  display: flex;
+  flex-direction: row;
+}
+.my-box .order-status .status-box{
+  padding: 20rpx 0;
+  border-bottom: 1px solid #e5e5e5;
+  flex: 1
+}
+.my-box .order-status .status-box .img{
+ padding: 0 60rpx;
+ box-sizing: border-box
+}
+.my-box .order-status .status-box .img image{
+  width: 100%;
+  display: block
+}
+.my-box .order-status .status-box .text-box{
+  text-align: center;
+  font-size: 32rpx
+}
+.my-box .discount-box{
+  width: 100%
+}
+.my-box .discount-box .discount{
+  padding: 16rpx 20rpx;
+  background: url("https://e-shop.szrundao.com/Assets/Source/img/icon-right.png") no-repeat right center;
+  background-size: 48rpx ;
+  font-size: 32rpx;
+  color: #666;
+  border-bottom: 1rpx solid #e5e5e5
+}
+.my-box .discount-box .discount .img{
+  width: 40rpx;
+  margin-right: 20rpx
+} 

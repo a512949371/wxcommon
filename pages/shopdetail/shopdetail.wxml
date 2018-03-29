@@ -1,0 +1,11 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='mt80'>
+  <view class='img'><image src='{{imgSrc+imgdata.pic_id}}' mode='widthFix'></image></view>
+  <view class="tit"><text >{{imgdata.name}}</text></view>
+  <view class="tit"><text >零售价:{{imgdata.price}}元</text></view>
+  <template is="wxParse" data="{{wxParseData:shopdetail.nodes}}" ></template>
+  <view class='fixbox'>
+   <view class='btnbox' bindtap='Cart'>加入购物车</view>
+   <view class='btnbox red' bindtap='Buy'>立即购买</view>
+  </view>
+</view>

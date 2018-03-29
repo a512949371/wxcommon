@@ -1,0 +1,28 @@
+<!--pages/index/alert/alert.wxml-->
+<template name="alert">
+ <view class='alert-box' wx:if="{{alertTF}}">
+  <view class='shaw'></view>
+  <view class='content-box'>
+   <view class='img'>
+    <image src='/pages/images/icon_bg_01@2x.png' mode='widthFix'></image>
+    <view class='close'><image src='/pages/images/icon_back@2x.png' mode='widthFix' bindtap='Close'></image> </view>
+    <view class='acttime-box'><text class='white'>剩余</text><text class='time'>{{times.day||00}}</text>:<text class='time'>{{times.hour||00}}</text>:<text class='time'>{{times.min||00}}</text>:<text class='time'>{{times.sec||00}}</text></view>
+    <view class='target-box'>
+     <view class='img'><image src='/pages/images/icon_mbje@2x.png' mode='widthFix'></image></view>
+     <view class='price'>￥4323</view>
+    </view>
+    <view class='shop-box'>
+     <view class='img'><image src='/pages/images/image_01@2x.png' mode='widthFix'></image></view>
+     <view class='info-box'>
+      <view class='dec'>2B铅笔团队</view>
+      <view class='dec'>【万千少女的选择】白色连衣裙，韩国进口</view>
+      <view class='price'>￥999 <text class='mix'>￥888</text> </view>
+     </view>
+    </view>
+    <view class='btn-box'>
+     <image src='/pages/images/icon-btn@2x.png' mode='widthFix'></image>
+    </view>
+   </view>
+  </view>
+ </view>
+</template>

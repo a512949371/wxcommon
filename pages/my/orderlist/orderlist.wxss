@@ -1,0 +1,101 @@
+.top-nav{
+  width: 100%;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #e5e5e5;
+  display: flex
+}
+.top-nav .nav{
+  text-align: center;
+  font-size: 32rpx;
+  flex: 1;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.top-nav .active{
+  color: #f00;
+  border-bottom-color: #f00
+}
+.c{
+  zoom: 1
+}
+.c::after{
+  content: "";
+  display: block;
+  clear: both;
+  z-index: 1
+}
+.fl{
+  float: left
+}
+.fr{
+  float: right
+}
+.pl40{
+  padding-left: 40rpx;
+}
+.list-box{
+  width: 100%;
+  box-sizing: border-box;  
+}
+.list-box .list-top{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+  font-size: 36rpx;
+  color: #333
+}
+.stat{
+  font-size: 32rpx;
+  color: #999
+}
+.class-box{
+  display: flex;
+  flex-direction: row;
+}
+.class-box .left{
+  max-width: 300rpx;
+  min-width: 300rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  flex: 0
+}
+.class-box .left image{
+  width: 100%;
+  display: block;
+}
+.class-box .right{
+  z-index: 1;
+  padding-top: 30rpx;
+}
+.class-box .right .tit{
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap
+}
+.class-box .right .info{
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+.class-box .right .price{
+  font-size: 32rpx;
+  color: #333
+}
+.class-box .right .price text{
+  color: #f00
+}
+.all-box{
+  font-size: 32rpx;
+  color: #555;
+  text-align: right;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5
+}
+.all-box .blod{
+  font-weight: bold;
+  color: #000;
+  padding: 0 10rpx;
+}

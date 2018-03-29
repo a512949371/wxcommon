@@ -1,0 +1,237 @@
+/**index.wxss**/
+image{
+  width: 100%;
+  display: block;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+.c{
+  zoom: 1
+}
+.c::after{
+  z-index: 1;
+  content: "";
+  display: block;
+  clear: both;
+}
+.my{
+  padding: 10rpx 0;
+  color: #ff00ff;
+  text-align: center
+}
+.list{
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 20px;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 32rpx
+}
+.list .img{
+  width: 70%;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto
+}
+.list .img image{
+  width: 100%;
+  display: block;
+}
+.list .text{
+  padding-top: 20rpx
+}
+.tit{
+  font-size: 32rpx;
+  color: #333;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.shop{
+  padding: 20rpx;
+}
+.shop .text-one{
+  font-size: 32rpx;
+  color: #666;
+  padding: 10rpx 0;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.shop .text-two{
+  font-size: 28rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+  text-align: left;
+}
+.shop image{
+  width: 100%;
+  display: block
+}
+.shop .left{
+  float: left;
+  width: 60%;
+  padding: 20rpx;
+  box-sizing: border-box
+}
+.shop .right{
+  float: left;
+  width: 40%;
+  text-align: center;
+  padding: 20rpx;
+  box-sizing: border-box
+}
+.alert-box{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;bottom: 0
+}
+.alert-box .shaw{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+.alert-box .content-box{
+  position: fixed;
+  top: 100rpx;
+  left: 40rpx;
+  right: 40rpx;
+}
+.alert-box .content-box .img{
+  width: 100%;
+  position: relative;
+}
+.alert-box .content-box .img .close{
+  position: absolute;
+  top: 0;
+  right: 50rpx;
+  width: 70rpx;
+}
+.alert-box .content-box image{
+  width: 100%;
+  display: block;
+  margin: auto
+}
+.alert-box .content-box .acttime-box{
+  font-size: 40rpx;
+  color: #333;
+  position: absolute;
+  top: 42%;
+  left: 18%;
+}
+.alert-box .content-box .acttime-box .white{
+  color: #FFF;
+  padding: 0 10rpx;
+}
+.alert-box .content-box .acttime-box .time{
+  background: url(https://img.zhsjgroup.cn/icon_bg_08@2x.png) no-repeat center center;
+  background-size: cover;
+  padding: 10rpx;
+  margin: 0 10rpx;
+  font-size: 30rpx;
+  color: #FFF
+}
+.alert-box .content-box .target-box{
+  position: absolute;
+  top: 52%;
+  left: 20%;
+  display: flex
+}
+.alert-box .content-box .target-box .img{
+  width: 200rpx;
+}
+.alert-box .content-box .target-box .price{
+  color: #fff;
+  font-size: 46rpx;
+  font-weight: bold
+}
+.alert-box .content-box .shop-box{
+  position: absolute;
+  top: 63%;
+  left: 12%;
+  right: 18%;
+  display: flex
+}
+.alert-box .content-box .shop-box .img{
+  width: 160rpx;
+  padding-right: 20rpx;
+}
+.alert-box .content-box .shop-box .info-box{
+  flex: 1
+}
+.alert-box .content-box .shop-box .info-box .dec{
+  font-size: 30rpx;
+  color: #e9e9e9;
+}
+.alert-box .content-box .shop-box .info-box  .price{
+  color: #FFF;
+  font-size: 34rpx;
+  padding-top: 20rpx;
+}
+.alert-box .content-box .shop-box .info-box  .price .mix{
+  font-size: 30rpx;
+  color: #666;
+  text-decoration: line-through;
+  padding-left: 20rpx
+}
+.alert-box .content-box .btn-box{
+  position: absolute;
+  top: 88%;
+  left: 20%;
+  right:24%;
+}
+.hotshop-box{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box
+}
+.hotshop-box .hotshop-tit{
+  text-align: center;
+  font-size: 32rpx;
+  padding-bottom: 20rpx;
+}
+.hotshop-box .hotshop{
+  display: flex;
+  flex-wrap: wrap
+}
+.hotshop-box .hotshop .box{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 5rpx;
+  margin-bottom: 20rpx;
+}
+.hotshop-box .hotshop .box .hot-name{
+  font-size: 32rpx;
+  color: #333;
+  padding: 10rpx 0;
+}
+.hotshop-box .hotshop .box .hot-price{
+  font-size: 30rpx;
+  color: #f00;
+}

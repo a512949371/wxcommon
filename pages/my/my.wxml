@@ -1,0 +1,46 @@
+<import src="../my/time/time.wxml"/>
+<view class='my-box'>
+ <view class='my-top'>
+  <view class='my-icon'>
+   <image src='{{myicon}}' mode='widthFix'></image>
+  </view>
+  <view class='my-name'>
+    <text wx:if="{{myinfo}}">{{username}}</text>
+    <text wx:else bindtap='Login'>{{username}}</text>
+  </view>
+ </view>
+ <view class='order-box c'>
+ <navigator url='/pages/my/orderlist/orderlist'>
+  <text class='fl'>全部订单</text>
+  <text class='fr btnsty'>查看更多>></text>
+  </navigator>
+ </view>
+ <view class='order-status'>
+ <block wx:for="{{orderstatus}}">
+  <view class='status-box'>
+  <navigator>
+  <view class='img'>
+   <image src='{{item.img}}' mode='widthFix'></image>
+  </view>
+   <view class='text-box'>
+    <text>{{item.name}}</text>
+   </view>
+  </navigator>
+  </view>
+ </block>
+ </view>
+ <view class='discount-box'>
+  <block wx:for="{{discountdata}}">
+   <navigator url='{{item.url}}'>
+   <view class='discount c'>
+    <view class=' img fl'>
+     <image src='{{item.img}}' mode='widthFix'></image>
+    </view>
+    <view class='fl'>
+     <text>{{item.name}}</text>
+    </view>
+   </view>
+   </navigator>
+  </block>
+ </view>
+</view>

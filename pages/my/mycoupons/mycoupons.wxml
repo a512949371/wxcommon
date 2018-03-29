@@ -1,0 +1,10 @@
+<!--pages/my/mycoupons/mycoupons.wxml-->
+<import src="/pages/my/mycoupons/couponlist/couponlist"/>
+<view>
+ <view class='coupons-head'>
+  <view class='coupon {{couponTF==0?"active":""}}' data-index='0' bindtap='Changenav'>全部</view>
+  <view class='coupon {{couponTF==1?"active":""}}' data-index='1' bindtap='Changenav'>未使用</view>
+  <view class='coupon {{couponTF==2?"active":""}}' data-index='2' bindtap='Changenav'>已使用</view>
+ </view>
+ <template is="couponlist" data="{{coupondata}}"></template>
+</view>

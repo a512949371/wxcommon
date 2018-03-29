@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "time": "/pages/my/time/time"
+    },
+    "navigationBarTitleText": "个人中心"
+}

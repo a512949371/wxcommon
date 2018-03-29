@@ -1,0 +1,14 @@
+<view >
+ <block wx:for="{{shoplist}}">
+ <navigator url='/pages/shopdetail/shopdetail?id={{item.id}}'>
+    <view class=" class-box">
+        <view class="left"><image src="{{url+item.pic_id}}" mode='widthFix'></image></view>
+        <view class="right">    
+          <view class='tit'>{{item.name}}</view>
+          <view class='info'>{{item.propaganda}} </view>
+          <view class='price'>零售价：<text>{{item.price}}</text></view>
+        </view>
+    </view>
+  </navigator>
+ </block>
+</view>

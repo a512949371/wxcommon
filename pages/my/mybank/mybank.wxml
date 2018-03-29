@@ -1,0 +1,48 @@
+<!--pages/my/mybank/mybank.wxml-->
+<view>
+ <block wx:for="{{bankdata}}">
+  <view class='bank-box bankbg-{{item.banksort}}' bindtap='Removebank'>
+   <view class='borshaw'>
+   <view class='left-img'>
+    <view class='img'>
+     <image src='{{item.img}}' mode='widthFix'></image>
+    </view>
+   </view>
+   <view class='center-content'>
+    <view class='name'>{{item.bankname}}</view>
+    <view class='dec'>{{item.banktype}}</view>
+    <view class='dec'>
+      <text class='pr40'>****</text>
+      <text class='pr40'>****</text>
+      <text class='pr40'>****</text>
+    </view>
+   </view>
+   <view class='right-num'>
+   <view class='num-box'>{{item.banknum}}</view>
+   </view>
+   </view>
+   <view class='remove-box'  wx:if="{{removeTF}}">
+   <text>移除银行卡</text>
+  </view>
+  </view>
+  </block>
+  <view class='newbank' bindtap='Newbank'>新增+</view>
+  <view class='newbank-box' wx:if='{{newbankTF}}'>
+   <view class='shaw'></view>
+   <view class='bank'>
+    <view class='tit'>新建银行卡</view>
+     <view class='flex-box'>
+      <view class='dec'>姓名：</view>
+      <view class='input-box'><input></input></view>
+     </view>
+     <view class='flex-box'>
+      <view class='dec'>卡号：</view>
+      <view class='input-box'><input></input></view>
+     </view>
+     <view class='btn-box'>
+      <view class='btn one' bindtap='Closenew'>取消</view>
+      <view class='btn two'>确认</view>
+     </view>
+   </view>
+  </view>
+</view>

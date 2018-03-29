@@ -1,0 +1,155 @@
+/* pages/my/mybank/mybank.wxss */
+image{
+  width: 100%;
+  display: block
+}
+.bank-box{
+  width: 100%;
+  padding: 20rpx 10rpx;
+  box-sizing: border-box;
+  color: #FFF;
+  box-shadow: 2rpx 2rpx 5rpx #333
+}
+.pr40{
+  padding-right: 40rpx;
+}
+.bank-box .borshaw{
+  display: flex;
+}
+.bank-box .remove-box{
+  text-align: right;
+  font-size: 32rpx;
+  color: #e5e5e5;
+  padding: 20rpx 0 0 0;
+  border-top: 1rpx solid #e5e5e5
+}
+.bank-box .remove-box text{
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  background-color: #a2a2a2;
+  color: #FFF;
+}
+.bankbg-1{
+  background-color:#00e4ff
+}
+.bankbg-2{
+  background-color:#ff6c00
+}
+.bankbg-3{
+  background-color:#0030ff
+}
+.bank-box .left-img{
+  width: 70rpx;
+  padding: 0 20rpx;
+  flex: 0
+}
+.bank-box .left-img .img{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background-color: #FFF;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10rpx;
+}
+.bank-box .left-img .img image{
+  width: 80%;
+  display: block;
+  padding-top: 8rpx;
+  margin: auto
+}
+.bank-box .center-content{
+  flex: 1
+}
+.bank-box .center-content .name{
+  font-size: 32rpx;
+  padding: 5rpx 0;
+}
+.bank-box .center-content .dec{
+  font-size: 28rpx;
+  padding:5rpx 0;
+}
+.bank-box .right-num{
+  width: 60rpx;
+  padding: 0 20rpx;
+  flex: 0;
+  position: relative
+}
+.bank-box .right-num .num-box{
+  font-size: 36rpx;
+  position: absolute;
+  right: 0;
+  bottom: 10rpx;
+}
+.newbank{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20rpx 0;
+  text-align: center;
+  background-color: #ff6c00;
+  font-size: 32rpx;
+  border-top: 1rpx solid #999;
+  color: #FFF;
+  z-index: 99
+}
+.newbank-box{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.newbank-box .shaw{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+.newbank-box .bank{
+  background-color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:0;
+  height: 400rpx;
+}
+.newbank-box .bank .tit{
+  padding: 30rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  color: #333
+}
+.newbank-box .bank .flex-box{
+  display: flex;
+  padding-top: 20rpx;
+  padding-left: 40rpx;
+  font-size: 32rpx;
+  color: #666
+}
+.newbank-box .bank .flex-box .input-box{
+  border: 1rpx solid #ccc;
+  padding-left: 10rpx;
+  border-radius: 5rpx;
+}
+.newbank-box .bank .btn-box{
+  display: flex
+}
+.newbank-box .bank .btn-box .btn{
+  flex: 1;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  color: #FFF
+}
+.newbank-box .bank .btn-box .one{
+  background-color: #ff6c00
+}
+.newbank-box .bank .btn-box .two{
+  background-color: #f00
+}

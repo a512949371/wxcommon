@@ -1,0 +1,60 @@
+<!--pages/my/myadd/myadd.wxml-->
+<view class='myadd-box'>
+ <block wx:for="{{adddata}}">
+   <view class='my-add {{item.act==1?"active":""}}'>
+     <view class='box' bindtap='Changeadd' data-index="{{index}}">
+     <view class='addbox'>姓名:{{item.userName}}</view>
+     <view class='addbox'>电话:{{item.telNumber}}</view>
+     <view class='addbox'>地址:<text class='pr20'>{{item.provinceName}}</text><text class='pr20'>{{item.cityName}}</text><text class='pr20'>{{item.countyName}}</text><text class='pr20'>{{item.detailInfo}}</text>
+     </view>
+     </view>
+   <view class='change-box'  wx:if="{{item.act==1}}">
+   <text class='mr20' bindtap='Editadd' data-index="{{index}}">编辑</text> <text bindtap='Removeadd' data-index="{{index}}">删除</text>
+  </view>
+   </view>
+ </block>
+ <view class='newadd' >
+      <view class='btn one' bindtap='Newadd'>新增+</view>
+      <view class='btn two' bindtap='Openwxadd'>微信调用</view>
+ </view>
+ <view class='newadd-box' wx:if="{{showaddTF}}">
+  <view class='shaw'></view>
+  <view class='add-box'>
+  <view class='tit'>{{title}}</view>
+  <view class='add'>
+   <view class='dec'>姓名:</view>
+   <view class='input-box'><input bindinput='Newaddone' data-index="1" value='{{newadd.userName}}'></input></view>
+  </view>
+  <view class='add'>
+   <view class='dec'>联系电话:</view>
+   <view class='input-box'><input bindinput='Newaddone' data-index="2" value='{{newadd.telNumber}}'></input></view>
+  </view>
+  <view class='add'>
+   <view class='dec'>省市区:</view>
+   <view class='input-box'> 
+   <picker mode="selector" value='{{index_p}}' range='{{province}}' range-key="name" bindchange='Newaddtwo' data-index='1'>
+    <view class='picker'>{{province[index_p].name}}</view>
+   </picker>
+   </view>
+   <view class='input-box'>
+   <picker mode="selector" value='{{index_a}}' range='{{area}}' range-key="name" bindchange='Newaddtwo' data-index='2'>
+    <view class='picker'>{{area[index_a].name}}</view>
+   </picker>
+   </view>
+   <view class='input-box'>
+   <picker mode="selector" value='{{index_c}}' range='{{city}}' range-key="name" bindchange='Newaddtwo' data-index='3'>
+    <view class='picker'>{{city[index_c].name}}</view>
+   </picker>
+   </view>
+  </view>
+  <view class='add'>
+   <view class='dec'>详细地址:</view>
+   <view class='input-box'><input bindinput='Newaddone' data-index="3" value='{{newadd.detailInfo}}'></input></view>
+  </view>
+  <view class='btn-box'>
+  <view class='btn one' bindtap='Closenew'>取消</view>
+  <view class='btn two' bindtap='Addtrue'>确认</view>
+  </view>
+  </view>
+ </view>
+</view>

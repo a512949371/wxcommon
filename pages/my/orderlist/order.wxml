@@ -1,0 +1,30 @@
+<template name="order">
+<view>
+ <view class='list-box'>
+ <block wx:for="{{orderdata}}">
+  <view class='list-top c'>
+   <text class='fl' bindtap='test'>{{item.company}}</text>
+   <text class='fr stat' wx:if="{{item.status==1}}">未付款</text>
+   <text class='fr stat' wx:if="{{item.status==2}}">已发货</text>
+   <text class='fr stat' wx:if="{{item.status==3}}">已签收</text>
+  </view>
+  <view>
+    <navigator url='/pages/shopdetail/shopdetail?id={{item.id}}'>
+        <view class=" class-box">
+            <view class="left"><image src="{{item.img}}" mode='widthFix'></image></view>
+            <view class="right">    
+              <view class='tit'>{{item.shopname}}</view>
+              <view class='info'>{{item.des}} </view>
+              <view class='price'>￥：<text>{{item.price}}</text></view>
+            </view>
+        </view>
+        <view class='all-box'>
+         <text>共<text class='blod'>{{item.buynum}}</text>件商品</text>
+         <text class='pl40'>合计:<text class='blod'>￥{{item.buynum*item.price}}</text></text>
+        </view>
+      </navigator>
+  </view>
+  </block>
+ </view>
+</view>
+</template>

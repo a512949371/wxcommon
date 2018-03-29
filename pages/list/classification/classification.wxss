@@ -1,0 +1,45 @@
+.c{
+  zoom: 1
+}
+.c::after{
+  content: "";
+  display: block;
+  clear: both;
+  z-index: 1
+}
+.class-box{
+  display: flex;
+  flex-direction: row;
+}
+.class-box .left{
+  max-width: 300rpx;
+  min-width: 300rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  flex: 0
+}
+.class-box .left image{
+  width: 100%;
+  display: block;
+  min-height: 100rpx
+}
+.class-box .right{
+  z-index: 1;
+  padding-top: 30rpx;
+}
+.class-box .right .tit{
+  font-size: 32rpx;
+  color: #333
+}
+.class-box .right .info{
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+.class-box .right .price{
+  font-size: 32rpx;
+  color: #333
+}
+.class-box .right .price text{
+  color: #f00
+}

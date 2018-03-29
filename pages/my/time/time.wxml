@@ -1,0 +1,7 @@
+
+  <view>
+    <view class='timebox'>
+    <view class='img'><image src='/pages/images/time.png' mode='widthFix'></image></view>
+    <view class='time'>{{timedata.day}}天{{timedata.hour}}时{{timedata.min}}分{{timedata.sec}}秒</view>
+    </view>
+  </view>

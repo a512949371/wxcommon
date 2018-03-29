@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<import src="/pages/index/alert/alert.wxml"/>
+<view>
+  <banner imgdata="{{imgdata}}"></banner>
+  <view class='c'>
+  <block wx:for="{{sortdata}}">
+   <view class='list'>
+    <navigator url=''>
+    <view class='img'>
+      <image src='{{item.img}}' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+    <text >{{item.name}}</text>
+    </view>
+    </navigator>  
+   </view>
+  </block>
+  </view>
+  <view class='tit'>
+   <text bindtap='Updata'>特价精选</text>
+  </view>
+  <view class='shop c'>
+  
+    <view class='left'>
+     <navigator url='/pages/shopdetail/shopdetail?id={{shopLeft[0].id}}'>
+      <view><image src="{{shopLeft[0].img}}" mode='widthFix'></image></view>
+      <view class='text-one'><text>{{shopLeft[0].name}}</text></view>
+      <view class='text-two'><text>零售价:{{shopLeft[0].price}}</text></view>
+     </navigator>
+    </view>
+    <view class='right' >
+    <block wx:for="{{shopLeft}}">
+      <view wx:if="{{index!=0}}">
+       <navigator url='/pages/shopdetail/shopdetail?id={{item.id}}'>
+        <view><image src="{{item.img}}" mode='widthFix'></image></view>
+        <view class='text-one'><text>{{item.name}}</text></view>
+        <view class='text-two'><text>零售价:{{item.price}}</text></view>
+       </navigator>
+      </view>
+      </block>
+    </view>   
+  </view>
+  <view class='hotshop-box'>
+    <view class='hotshop-tit'>{{hotshopdata.title}}</view>
+     <view class='hotshop'>
+     <block wx:for="{{hotshopdata.shoplist}}">
+      <view class='box'>
+       <view class='img'><image src='{{item.img}}' mode='widthFix'></image></view>
+       <view class='hot-name'>{{item.name}}</view>
+       <view class='hot-price'>￥{{item.price}}</view>
+      </view>
+      </block>
+     </view>
+  </view>
+  <template is="alert" data="{{alertTF:alertTF,times:timedata}}"></template>
+</view>

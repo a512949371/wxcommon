@@ -1,0 +1,52 @@
+/* pages/my/mybargain/mybargain.wxss */
+.class-box{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #e5e5e5
+}
+.class-box .left{
+  max-width: 240rpx;
+  min-width: 240rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.class-box .left image{
+  width: 100%;
+  display: block;
+}
+.class-box .right{
+  z-index: 1;
+  padding-top: 30rpx;
+  flex: 1
+}
+.class-box .right .tit{
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap
+}
+.class-box .right .info{
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+.class-box .right .price{
+  font-size: 32rpx;
+  color: #333
+}
+.class-box .right .price text{
+  color: #f00
+}
+.class-box .right-btn{
+  width: 100rpx;
+  padding-right: 30rpx
+}
+.class-box .right-btn .btn{
+  border: 1rpx solid #f00;
+  padding: 5rpx 10rpx;
+  color: #f00;
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}

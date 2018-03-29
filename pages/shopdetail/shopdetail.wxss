@@ -1,0 +1,35 @@
+@import "/wxParse/wxParse.wxss";
+.tit{
+  font-size:32rpx;
+  padding: 20rpx;
+}
+.pd20{
+ padding:20rpx
+}
+.mt80{
+  margin-bottom: 80rpx
+}
+.fixbox{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80rpx;
+  background-color: #e5e5e5;
+  border-top: 1px solid #666;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  color: #333;
+  font-size: 32rpx;
+}
+.fixbox .btnbox{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.fixbox .red{
+  background-color: #f00;
+  color: #FFF;
+  padding: 20rpx 0;
+}

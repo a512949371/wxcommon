@@ -1,0 +1,11 @@
+<import src="../../my/orderlist/order.wxml"/>
+<view >
+ <view class='top-nav'>
+  <block wx:for="{{nav}}">
+   <view class='nav {{index==navTF?"active":""}}'  data-num="{{index}}" bindtap='Changenav'>
+     <text>{{item.name}}</text>
+   </view>
+  </block>
+ </view>
+ <template is="order" data="{{orderdata}}"></template>
+</view>

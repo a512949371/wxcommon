@@ -1,0 +1,28 @@
+<!--pages/my/mycoupons/couponlist/couponlist.wxml-->
+<template name="couponlist">
+<view class='mt40'>
+ <block wx:for="{{coupondata}}">
+  <view class='bank-box bankbg-{{item.couponsort}}' bindtap='Removebank'>
+   <view class='borshaw'>
+   <view class='left-img'>
+    <view class='img'>
+     <image src='{{item.img}}' mode='widthFix'></image>
+    </view>
+   </view>
+   <view class='center-content'>
+    <view class='name'>{{item.couponname}}</view>
+    <view class='dec'>{{item.coupontype}}</view>
+    <view class='dec'>
+      <text class='pr40'>使用时间:{{item.couponstarttime}}-{{item.couponendtime}}</text>
+    </view>
+   </view>
+   <view class='right-num'>
+   <view class='num-box' wx:if="{{item.couponsort==1}}">已使用</view>
+   <view class='num-box' wx:if="{{item.couponsort==2}}">未使用</view>
+   <view class='num-box' wx:if="{{item.couponsort==3}}">已过期</view>
+   </view>
+   </view>
+  </view>
+  </block>
+  </view>
+  </template>

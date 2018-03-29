@@ -1,0 +1,51 @@
+<!--pages/orderpreview/orderoreview.wxml-->
+<view>
+ <view class='add-box'>
+  <view class='addicon'>
+   <image src='/pages/images/add.png' mode='widthFix'></image>
+  </view>
+  <view class='addinfo' bindtap='Changeadd'>
+   <view class='c fontsize36'>
+    <text class='fl'>{{adddata.username}}</text>
+    <text class='fr'>{{adddata.userphone}}</text>
+   </view>
+   <view class='pt10'>
+     <view class='flexbox'>
+      <view class='addbox'>{{adddata.addinfo}}</view>
+      <view class='iconright'><image src='/pages/images/icon-right.png' mode='widthFix'></image></view>
+     </view>
+   </view>
+  </view>
+ </view>
+  <view class=" class-box">
+      <view class="left">
+      <navigator url='/pages/shopdetail/shopdetail?id={{ordershopdata.id}}'>
+      <image src="{{ordershopdata.img}}" mode='widthFix'></image>
+      </navigator>
+      </view>
+      <view class="right">    
+      <navigator url='/pages/shopdetail/shopdetail?id={{ordershopdata.id}}'>
+        <view class='tit'>{{ordershopdata.name}}</view>
+        <view class='info'>{{ordershopdata.dec}} </view>
+        <view class='price'>￥：<text>{{ordershopdata.price}}</text></view>
+        </navigator>
+      </view>
+      <view class='right-btn'>
+        <view class='btn'>X{{ordershopdata.buynum}}</view>
+      </view>
+  </view>
+  <view class='dec-box'>
+   <view class='dec'>共计:{{ordershopdata.buynum}}件商品</view>
+   <view class='dec'>运费:{{ordershopdata.freight}}元</view>
+   <view class='dec'>合计:{{buyprice}}元</view>
+  </view>
+  <view class='coupons-box'>
+   <view class='tit' wx:if="{{couponsdata.price}}">已使用优惠券<text class='red'>-{{couponsdata.price}}</text></view>
+   <view class='tit' wx:else>使用优惠券</view>
+   <view class='icon-right'><image src='/pages/images/icon-right.png' mode='widthFix'></image></view>
+  </view>
+  <view class='buy-box'>
+   <view class='buy'>共计:{{buyprice-couponsdata.price}}元</view>
+   <view class='btn' bindtap='Pay'>提交订单</view>
+  </view>
+</view>

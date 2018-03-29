@@ -1,0 +1,33 @@
+<view class='height bortop'>
+  <view class='flexbox height'>
+    <view class='left-list'>
+      <block wx:for="{{sortdata}}">
+        <view class='list-box' bindtap='Changecontent' data-num="{{index}}">
+          <view  class='text'>
+           <text>{{item.name}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class='right-content'>
+    <view class='content-box'>
+     <block wx:for="{{sortdata[index].nodes}}">
+     <view class='tit'>{{item.name}}</view>
+     <view class='shoplist c'>
+       <block wx:for="{{item.nodes}}">
+       <navigator url='/pages/list/classification/classification?id={{item.id}}'>
+       <view class='classification'>
+        <image src='{{url+item.icon}}' mode='widthFix'></image>
+        <view class='text-box'>
+         <text>{{item.name}}</text>
+        </view>
+       </view>
+       </navigator>
+       </block>
+     </view>
+     </block>
+     </view>
+    </view>
+  </view>
+  
+</view>

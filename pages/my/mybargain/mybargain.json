@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "砍价列表",
+  "usingComponents":{
+    "times":"/pages/my/time/time"
+  }
+}

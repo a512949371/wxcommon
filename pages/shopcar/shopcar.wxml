@@ -1,0 +1,45 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view>
+  <view class='shopcar-box'>
+    <block wx:for="{{shopdata}}" wx:for-item="data" wx:for-index="i">
+      <view class='bg'>
+        <view class='shopname-box'>
+          <view class='shopname'>{{data.shopname}}</view>
+          <view class='icon'>
+            <checkbox-group data-idx="{{i}}" bindchange="Changeall">
+              <checkbox checked='{{data.checked}}'></checkbox>
+            </checkbox-group>
+          </view>
+        </view>
+        <block wx:for="{{data.shoplist}}">
+          <view class='shoplist-box'>
+            <view class='leftimg'>
+              <image mode='widthFix' src='{{item.img}}'></image>
+            </view>
+            <view class='center-content'>
+              <view class='name'>{{item.name}}</view>
+              <view class='dec'>{{item.dec}}</view>
+              <view class='num-box'>
+                <view class='reduce' bindtap='Reduce' data-idx='{{i}}' data-index="{{index}}">-</view>
+                <input value='{{item.buynum}}' data-idx='{{i}}' data-index="{{index}}" bindinput='Changebuynum'></input>
+                <view class='add' bindtap='Add' data-idx='{{i}}' data-index="{{index}}">+</view>
+              </view>
+            </view>
+            <view class='right-icon'>
+              <checkbox-group data-idx="{{i}}" data-index="{{index}}" bindchange="Changeone">
+                <checkbox checked='{{item.checked}}'></checkbox>
+              </checkbox-group>
+              <view class='price'>￥<text class='red'>{{item.price}}</text> </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+  <view class='carbuy-box'>
+   <view class='info'>
+    <view>一共<text class='red'>{{buynum||0}}</text>件商品,共<text class='red'>{{buyprice||0}}</text>元</view>
+   </view>
+   <view class='btn'>购买</view>
+  </view>
+</view>

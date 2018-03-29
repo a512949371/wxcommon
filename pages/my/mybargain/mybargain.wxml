@@ -1,0 +1,29 @@
+<!--pages/my/mybargain/mybargain.wxml-->
+<import src="../my/time/time.wxml"/>
+<view>
+ <view class='mybargain-box'>
+ <block wx:for="{{bargaindata}}">
+  <view class='mybargain'>
+   <times times="{{item.endtime}}"></times>
+        <view class=" class-box">
+            <view class="left">
+            <navigator url='/pages/shopdetail/shopdetail?id={{item.id}}'>
+            <image src="{{item.img}}" mode='widthFix'></image>
+            </navigator>
+            </view>
+            <view class="right">    
+            <navigator url='/pages/shopdetail/shopdetail?id={{item.id}}'>
+              <view class='tit'>{{item.name}}</view>
+              <view class='info'>{{item.dec}} </view>
+              <view class='price'>￥：<text>{{item.price}}</text></view>
+              <view class='info'>当前购买人数:<text>{{item.buynumber}}</text>/<text>{{item.zbuynumber}}</text></view>
+              </navigator>
+            </view>
+            <view class='right-btn'>
+             <view class='btn'>购买</view>
+            </view>
+        </view>
+  </view>
+ </block>
+ </view>
+</view>

@@ -1,0 +1,72 @@
+page{
+  min-height: 100%;
+}
+.height{
+  min-height: 100%;
+}
+.bortop{
+  border-top: 1px solid #e5e5e5
+}
+.flexbox{
+  display: flex;
+}
+.c{
+  zoom: 1
+}
+.c::after{
+  content: "";
+  display:block;
+  z-index: 99;
+  clear: both;
+}
+.left-list{
+  flex: 0;
+  min-width: 200rpx;
+  padding: 20rpx 0;
+  min-height: 100%;
+  border-right: 1px solid #e5e5e5
+}
+.left-list .list-box{
+ width: 100%;
+ display: block;
+ text-align: center;
+ box-sizing: border-box;
+ padding:10rpx 0;
+ font-size: 32rpx
+}
+.left-list .list-box image{
+  width: 100%;
+  display: block
+}
+.left-list .list-box .text{
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  padding-bottom: 10rpx;  
+  border-bottom: 1rpx solid #e5e5e5
+}
+.right-content{
+  flex: 1
+}
+.right-content .content-box .tit{
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #e5e5e5
+}
+.right-content .content-box .shoplist{
+  width: 100%
+}
+.right-content .content-box .shoplist .classification{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+}
+.right-content .content-box .shoplist .classification image{
+  width: 100%;
+  display: block
+}
+.right-content .content-box .shoplist .classification .text-box{
+  text-align: center;
+  font-size: 32rpx
+}

@@ -1,0 +1,18 @@
+image{
+  width: 100%;
+  display: block
+}
+.timebox{
+  text-align: center;
+  font-size: 32rpx;
+  padding-top:30rpx;
+  padding-left: 260rpx;
+  display: flex;
+}
+.timebox .img{
+  width: 50rpx;
+  display: inline-block
+}
+.timebox .time{
+  display: inline-block
+}
